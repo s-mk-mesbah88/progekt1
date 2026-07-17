@@ -1,0 +1,2194 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+body {
+  background-color: #000;
+}
+
+/* navar */
+#main1 {
+  width: 50px;
+  height: 170px;
+  top: 420px;
+  right: -8px;
+  border-radius: 9px;
+  position: fixed;
+  border: 1px solid green;
+  background-color: white;
+  box-shadow: 0px 0px 6px gray;
+}
+
+#main1 > div {
+  width: 60%;
+  height: 70%;
+  margin: 10px 0 10px 5px;
+}
+
+#main1 > div > div {
+  position: relative;
+}
+
+#main1 > div > div > a {
+  display: block;
+  margin: 0px 5px 0px 5px;
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+}
+
+#main1 > div > div > a > svg {
+  width: 100%;
+  height: 100%;
+}
+
+#main1 img {
+  object-fit: contain;
+}
+
+#main1 > div > div > a > div {
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: -360%;
+  transition: 10s;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 5px gray;
+  background-color: white;
+  color: rgb(97, 161, 0);
+  display: none;
+}
+
+#main1 > div > div > a:hover > div {
+  display: block;
+}
+
+.main2 {
+  background-color: white;
+  border-radius: 25px;
+  width: 90px;
+  height: 49px;
+  position: fixed;
+  top: 420px;
+  left: -20px;
+  box-shadow: 0px 0px 1px gray;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.main2 > div {
+  width: 45%;
+  margin: 8px 0 0 30px;
+  overflow: hidden;
+}
+
+.main2 > input,
+select,
+span {
+  display: none;
+}
+
+/* main3 */
+.main3 {
+  background-color: white;
+  width: 64px;
+  height: 350px;
+  border-radius: 35px;
+  position: fixed;
+  top: 38%;
+  left: 5px;
+  box-shadow: 0px 0px 1px gray;
+  overflow: visible;
+}
+
+.main3 > span.close {
+  font-size: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  color: #ce4f4d;
+  z-index: 20;
+  text-align: center;
+  line-height: 15px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  opacity: 1;
+  background-color: #eeeeee;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.main3 > div {
+  width: 80%;
+  height: 69px;
+  margin: 10px auto;
+}
+
+.main3 > .divcolor {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 8px auto;
+  position: relative;
+  border: 1px solid black;
+}
+
+.main3 input {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+}
+
+.main3 > p {
+  width: 30px;
+  font-size: 12px;
+  color: gray;
+  margin: 0 auto 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main3 > .select {
+  display: block;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 8px auto;
+  position: absolute;
+  left: 10px;
+  text-align: center;
+  font-size: 15px;
+  background-image: linear-gradient(140deg, #ffffff 0%, #135bff 50%, #ffeb00 75%);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.main3 .select option {
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  line-height: 20px;
+  text-align: start;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.main3 .select option div {
+  width: 100%;
+  height: 100%;
+}
+
+.main3 .select option:hover {
+  background-color: #f6f6f6;
+}
+
+/* رسپانسیو گوشی  */
+@media (max-width: 599px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  header > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #bixom {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 20px auto 25px;
+  }
+  #lcenter {
+    width: 90%;
+    height: fit-content;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
+  .pur {
+    width: 180px;
+    height: 50px;
+    padding: 14px 25px;
+    border-radius: 60px;
+    background-color: #1f150c;
+    margin: 25px auto;
+  }
+  .pur > a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+  }
+  .pur > a > i {
+    width: 15px;
+    height: 15px;
+    color: white;
+    margin: 3px 0 0 5px;
+  }
+  #rleft {
+    width: 100%;
+    height: 50%;
+    display: none;
+  }
+  .hright div {
+    width: 200px;
+    height: 200px;
+  }
+  #rright {
+    display: none;
+  }
+}
+@media (max-width: 599px) and (max-height: 920px) {
+  #hide {
+    display: none;
+  }
+}
+@media (max-width: 599px) and (max-height: 640px) {
+  #hright {
+    display: none;
+  }
+  #hleft {
+    height: 100%;
+  }
+}
+@media (max-width: 599px) {
+  /* main */
+  main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  #mytop {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 150px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #mytop > div {
+    height: 40vh;
+    width: 100%;
+    margin-top: 30px;
+  }
+  #mytop > div > div {
+    width: 250px;
+    height: 160px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border-radius: 17px;
+    box-shadow: 5px 4px 10px gray;
+  }
+  #mytop > div > h5 {
+    width: 250px;
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #mytop > div > p {
+    width: 366px;
+    margin: auto;
+    font-size: medium;
+    text-align: center;
+    color: rgb(82, 82, 82);
+  }
+  /*explore */
+  #explore {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+    color: white;
+  }
+  #number {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  #number > span {
+    width: 50%;
+    height: 100%;
+    font-size: 100px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: white;
+  }
+  #five {
+    text-align: end;
+  }
+  #explore > div:nth-child(2) {
+    height: fit-content;
+    width: 100%;
+    margin: 30px auto 0;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+  }
+  #explore > div#ul {
+    height: 30%;
+    width: 100%;
+    color: white;
+    margin: 10px 0;
+  }
+  #explore > div#ul > ul {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 40px;
+  }
+  #explore > div#ul > ul > li {
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+  }
+  #explore > div#ul > ul > li > span {
+    display: block;
+  }
+  #explore > div#mypic {
+    width: 100%;
+    margin-top: 80px;
+    height: 50px;
+  }
+  /* filter */
+  #filter {
+    width: 100%;
+    padding: 30px 0;
+  }
+  #filter > div#ul2 {
+    width: 100%;
+    height: fit-content;
+    color: white;
+    margin: 0px auto;
+  }
+  #filter > div#ul2 > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    gap: 0 30px;
+  }
+  #filter > div#ul2 > ul > li {
+    width: 40%;
+    height: 25%;
+    padding: 0;
+    align-items: center;
+    line-height: 50px;
+    text-align: center;
+  }
+  #filter > div#ul2 > ul > li:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+  }
+  .activ {
+    background-color: rgb(58, 58, 58);
+  }
+  #pic-tall {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px 0;
+  }
+  #pic-tall > div {
+    width: 90%;
+    height: 90vh;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #pic-tall > div > div:nth-child(1) {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    margin: 0 0;
+  }
+  #pic-tall > div > div:nth-child(1) > img {
+    width: 100%;
+    height: 250%;
+    border-radius: 15px;
+  }
+  #pic-tall > div > div:nth-child(1):hover > img {
+    top: -120%;
+    left: 0;
+  }
+  #pic-tall > div > div:nth-child(2) {
+    width: fit-content;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+  #pic-tall > div > div.sing {
+    bottom: 120px;
+    left: 40px;
+  }
+  #pic-tall > div > div > a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 25px;
+    color: #000;
+  }
+  #pic-tall > div > div > a.single {
+    width: 50%;
+    float: left;
+  }
+  #pic-tall > div > div > a:hover {
+    background-color: rgb(24, 9, 39);
+    color: white;
+  }
+  #pic-tall > div:hover > div {
+    display: block;
+  }
+  #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  #pic-tall > div > div > h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    cursor: pointer;
+    color: gray;
+  }
+  #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  #pic-tall > div > div > div.tall-top {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border: none;
+    color: gray;
+    display: block;
+  }
+  #pic-tall > div > div#tall-top img {
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+  #pic-tall > div > div > div.tall-top h5 {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    display: block;
+  }
+  .myhide {
+    display: none;
+  }
+  /* all-r-l */
+  .auto {
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(238, 238, 238);
+  }
+  #all-r-l {
+    width: 93%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  #all-r-l > div {
+    width: 100%;
+    background-color: white;
+    margin: 30px 5px;
+    padding: 20px 0;
+  }
+  #all-r-l > div > div {
+    width: 100%;
+    height: 130px;
+    margin: 50px 15px;
+    padding: 10px 7px;
+  }
+  #all-r-l > div > div.top {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    margin: 20px auto 0;
+    padding: 0;
+  }
+  #all-r-l > div > div.top > h5 {
+    font-size: 25px;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  #all-r-l > div > div.top > p {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  #all-r-l > div > div > h5 {
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 450;
+  }
+  #rtl > p {
+    font-size: 16px;
+    height: 140px;
+    color: gray;
+    margin: 0 10px 0 0;
+    line-height: 70px;
+    padding: 0 10px;
+  }
+  #all-r-l > div > div > p {
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+    padding: 10px;
+  }
+  #all-r-l > div > div > div {
+    width: 80px;
+    height: 100%;
+    margin: 0 10px 0 0;
+    float: left;
+    transition: 0.2s;
+  }
+  #all-r-l > div > div:hover > div {
+    transform: scaleX(-1);
+  }
+  /* big-pic */
+  #big-pic {
+    width: 100%;
+    padding: 40px 0px;
+    background-color: white;
+  }
+  #big-pic > div {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 40px;
+  }
+  #big-pic > div > div {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 5px;
+  }
+  #big-pic h6 {
+    width: 100%;
+    height: fit-content;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #big-pic h2 {
+    width: 100%;
+    font-size: 30px;
+    height: fit-content;
+    font-weight: 450;
+  }
+  #big-pic p {
+    width: 100%;
+    line-height: 30px;
+    color: gray;
+    height: fit-content;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: justify;
+  }
+  #big-pic .bak-color {
+    background-color: rgba(228, 228, 228, 0.267);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  #big-pic .pic-big {
+    width: 100%;
+    height: 50%;
+  }
+  /* footer */
+  footer {
+    width: 100%;
+    height: 400px;
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+  footer > div {
+    width: fit-content;
+    height: 30px;
+    margin: auto;
+  }
+  footer h6 {
+    color: rgb(255, 81, 81);
+    text-align: center;
+    font-size: 13px;
+    height: fit-content;
+  }
+  footer h2 {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    padding: 5px 10px;
+  }
+  footer div:nth-child(3) {
+    width: fit-content;
+    margin: 200px auto 0;
+    display: block;
+    height: 50px;
+  }
+  #gotop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+    display: none;
+    z-index: 99;
+  }
+  .hide {
+    display: none !important;
+  }
+}
+/* رسپانسیو تپلت  */
+@media (min-width: 500px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  header > div {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  #bixom {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 20px auto 25px;
+  }
+  #lcenter {
+    width: 90%;
+    height: fit-content;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
+  .pur {
+    width: 180px;
+    height: 50px;
+    padding: 14px 25px;
+    border-radius: 60px;
+    background-color: #1f150c;
+    margin: 25px auto;
+  }
+  .pur > a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+  }
+  .pur > a > i {
+    width: 15px;
+    height: 15px;
+    color: white;
+    margin: 3px 0 0 5px;
+  }
+  #rleft {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 30px;
+  }
+  .hright div {
+    width: 200px;
+    height: 200px;
+  }
+  #rright {
+    display: none;
+  }
+}
+@media (min-width: 500px) and (max-height: 920px) {
+  #hide {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  /* main */
+  main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  #mytop {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 150px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #mytop > div {
+    height: 40vh;
+    width: 100%;
+    margin-top: 30px;
+  }
+  #mytop > div > div {
+    width: 250px;
+    height: 160px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border-radius: 17px;
+    box-shadow: 5px 4px 10px gray;
+  }
+  #mytop > div > h5 {
+    width: 250px;
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #mytop > div > p {
+    width: 366px;
+    margin: auto;
+    font-size: medium;
+    text-align: center;
+    color: rgb(82, 82, 82);
+  }
+  #explore {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+    color: white;
+  }
+  #number {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+  }
+  #number > span {
+    width: 50%;
+    height: 100%;
+    font-size: 130px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: white;
+  }
+  #five {
+    text-align: end;
+  }
+  #explore > div:nth-child(2) {
+    height: fit-content;
+    width: 100%;
+    margin: 30px auto 0;
+    color: white;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+  }
+  #explore > div#ul {
+    height: 30%;
+    width: 100%;
+    color: white;
+    margin: 10px 0;
+  }
+  #explore > div#ul > ul {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 47px;
+  }
+  #explore > div#ul > ul > li {
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+  }
+  #explore > div#ul > ul > li > span {
+    display: block;
+  }
+  #explore > div#mypic {
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+  }
+  /* filter */
+  #filter {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #filter > div#ul2 {
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin: 0px auto;
+  }
+  #filter > div#ul2 > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 0 30px;
+  }
+  #filter > div#ul2 > ul > li {
+    width: fit-content;
+    height: 100%;
+    padding: 0 20px;
+    align-items: center;
+    line-height: 50px;
+  }
+  #filter > div#ul2 > ul > li:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+  }
+  .activ {
+    background-color: rgb(58, 58, 58);
+  }
+  #pic-tall {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px 10px;
+  }
+  #pic-tall > div {
+    width: 48%;
+    height: 90vh;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #pic-tall > div > div:nth-child(1) {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    margin: 0 0;
+  }
+  #pic-tall > div > div:nth-child(1) > img {
+    width: 100%;
+    height: 250%;
+    border-radius: 15px;
+  }
+  #pic-tall > div > div:nth-child(1):hover > img {
+    top: -120%;
+    left: 0;
+  }
+  #pic-tall > div > div:nth-child(2) {
+    width: fit-content;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+  #pic-tall > div > div.sing {
+    bottom: 120px;
+    left: 40px;
+  }
+  #pic-tall > div > div > a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 25px;
+    color: #000;
+  }
+  #pic-tall > div > div > a.single {
+    width: 50%;
+    float: left;
+  }
+  #pic-tall > div > div > a:hover {
+    background-color: rgb(24, 9, 39);
+    color: white;
+  }
+  #pic-tall > div:hover > div {
+    display: block;
+  }
+  #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  #pic-tall > div > div > h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    cursor: pointer;
+    color: gray;
+  }
+  #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  #pic-tall > div > div > div.tall-top {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border: none;
+    color: gray;
+    display: block;
+  }
+  #pic-tall > div > div#tall-top img {
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+  #pic-tall > div > div > div.tall-top h5 {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    display: block;
+  }
+  /* all-r-l */
+  .auto {
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(238, 238, 238);
+  }
+  #all-r-l {
+    width: 93%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  #all-r-l > div {
+    width: 100%;
+    background-color: white;
+    margin: 30px 5px;
+    padding: 20px 0;
+  }
+  #all-r-l > div > div {
+    width: 100%;
+    height: 110px;
+    margin: 50px 15px;
+    padding: 10px 7px;
+  }
+  #all-r-l > div > div.top {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    margin: 20px auto 0;
+    padding: 0;
+  }
+  #all-r-l > div > div.top > h5 {
+    font-size: 27px;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  #all-r-l > div > div.top > p {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  #all-r-l > div > div > h5 {
+    width: 67%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 450;
+  }
+  #rtl > p {
+    font-size: 16px;
+    height: 140px;
+    color: gray;
+    margin: 0 10px 0 0;
+    line-height: 70px;
+    padding: 0 10px;
+  }
+  #all-r-l > div > div > p {
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+    padding: 10px;
+  }
+  #all-r-l > div > div > div {
+    width: 80px;
+    height: 100%;
+    margin: 0 10px 0 0;
+    float: left;
+    transition: 0.2s;
+  }
+  #all-r-l > div > div:hover > div {
+    transform: scaleX(-1);
+  }
+  /* big-pic */
+  #big-pic {
+    width: 100%;
+    padding: 40px 0px;
+    background-color: white;
+  }
+  #big-pic > div {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 40px;
+  }
+  #big-pic > div > div {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 5px;
+  }
+  #big-pic h6 {
+    width: 100%;
+    height: fit-content;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #big-pic h2 {
+    width: 100%;
+    font-size: 30px;
+    height: fit-content;
+    font-weight: 450;
+  }
+  #big-pic p {
+    width: 100%;
+    line-height: 30px;
+    color: gray;
+    height: fit-content;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: justify;
+  }
+  #big-pic .bak-color {
+    background-color: rgba(228, 228, 228, 0.267);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  #big-pic .pic-big {
+    width: 100%;
+    height: 50%;
+  }
+  /* footer */
+  footer {
+    width: 100%;
+    height: 250px;
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+  footer > div {
+    width: fit-content;
+    height: 30px;
+    margin: auto;
+  }
+  footer h6 {
+    color: rgb(255, 81, 81);
+    text-align: center;
+    font-size: 13px;
+    height: fit-content;
+  }
+  footer h2 {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    padding: 5px 10px;
+  }
+  footer div:nth-child(3) {
+    width: fit-content;
+    margin: 100px auto 0;
+    display: block;
+    height: 50px;
+  }
+  #gotop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+    display: none;
+    z-index: 98;
+  }
+  .hide {
+    display: none !important;
+  }
+}
+/*رسپانسیو لپتاپ*/
+@media (min-width: 850px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  header > div {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+  }
+  #bixom {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 60px auto 25px;
+  }
+  #lcenter {
+    width: 90%;
+    height: fit-content;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+  }
+  .pur {
+    width: 180px;
+    height: 50px;
+    padding: 14px 25px;
+    border-radius: 60px;
+    background-color: #1f150c;
+    margin: 25px auto;
+  }
+  .pur > a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+  }
+  .pur > a > i {
+    width: 15px;
+    height: 15px;
+    color: white;
+    margin: 3px 0 0 5px;
+  }
+  #hright {
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+  .hright {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+  .hright div {
+    width: 200px;
+    height: 200px;
+  }
+  /* main */
+  main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  #mytop {
+    background-color: white;
+    width: 100%;
+    margin: 40px auto;
+    padding: 150px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #mytop > div {
+    height: 25%;
+    width: 40%;
+  }
+  #mytop > div > div {
+    width: 250px;
+    height: 160px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border-radius: 17px;
+    box-shadow: 5px 4px 10px gray;
+  }
+  #mytop > div > h5 {
+    width: 250px;
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #mytop > div > p {
+    width: 366px;
+    margin: auto;
+    font-size: medium;
+    text-align: center;
+    color: rgb(82, 82, 82);
+  }
+  #explore {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+    color: white;
+  }
+  #number {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+  #number > span {
+    width: 50%;
+    height: 100%;
+    font-size: 130px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: white;
+  }
+  #five {
+    text-align: end;
+  }
+  #explore > div:nth-child(2) {
+    height: 100px;
+    width: 95%;
+    margin: 30px auto 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+  }
+  #explore > div#ul {
+    height: 30%;
+    width: 90%;
+    color: white;
+    margin: 50px auto;
+    margin: auto;
+  }
+  #explore > div#ul > ul {
+    width: 70%;
+    text-align: center;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 47px;
+  }
+  #explore > div#ul > ul > li {
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+  }
+  #explore > div#ul > ul > li > span {
+    display: block;
+  }
+  #explore > div#mypic {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+  }
+  #filter {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #filter > div#ul2 {
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin: 30px auto;
+  }
+  #filter > div#ul2 > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 0 30px;
+  }
+  #filter > div#ul2 > ul > li {
+    width: fit-content;
+    height: 100%;
+    padding: 0 20px;
+    align-items: center;
+    line-height: 50px;
+  }
+  #filter > div#ul2 > ul > li:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+  }
+  /*pic-tall */
+  .activ {
+    background-color: rgb(58, 58, 58);
+  }
+  #pic-tall {
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px 10px 60px;
+  }
+  #pic-tall > div {
+    width: 20%;
+    overflow: hidden;
+    height: 96vh;
+    position: relative;
+    cursor: pointer;
+    margin: 30px auto;
+  }
+  #pic-tall > div > div:nth-child(1) {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    margin: 0 0;
+  }
+  #pic-tall > div > div:nth-child(1) > img {
+    width: 100%;
+    height: 220%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 5s;
+  }
+  #pic-tall > div > div#tall-top img {
+    left: 0;
+    top: -80%;
+  }
+  #pic-tall > div > div:nth-child(1):hover > img {
+    top: -120%;
+    left: 0;
+  }
+  #pic-tall > div > div:nth-child(2) {
+    width: fit-content;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+  #pic-tall > div > div.sing {
+    bottom: 120px;
+    left: 40px;
+  }
+  #pic-tall > div > div > a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 25px;
+    color: #000;
+  }
+  #pic-tall > div > div > a.single {
+    width: 50%;
+    float: left;
+  }
+  #pic-tall > div > div > a:hover {
+    background-color: rgb(24, 9, 39);
+    color: white;
+  }
+  #pic-tall > div:hover > div {
+    display: block;
+  }
+  #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  #pic-tall > div > div > h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    cursor: pointer;
+    color: gray;
+  }
+  #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  #pic-tall > div > div > div.tall-top {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    color: gray;
+    display: block;
+  }
+  #pic-tall > div > div > div.tall-top h5 {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    display: block;
+  }
+  /* all-r-l */
+  .auto {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+  }
+  #all-r-l {
+    width: 93%;
+    margin: auto;
+    height: 1750px;
+  }
+  #all-r-l > div {
+    width: 46%;
+    height: 83%;
+    float: left;
+    background-color: white;
+    margin: 120px 2%;
+  }
+  #all-r-l > div > div {
+    width: 100%;
+    height: 110px;
+    margin: 50px 15px;
+    padding: 7px;
+  }
+  #all-r-l > div > div.top {
+    width: 100%;
+    text-align: start;
+    height: fit-content;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  #all-r-l > div > div.top > h5 {
+    font-size: 35px;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  #all-r-l > div > div.top > p {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  #all-r-l > div > div > h5 {
+    width: 67%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 450;
+  }
+  #rtl > p {
+    font-size: 16px;
+    height: 140px;
+    color: gray;
+    margin: 0 10px 0 0;
+    line-height: 20px;
+    padding: 0 10px;
+  }
+  #all-r-l > div > div > p {
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+    color: gray;
+    line-height: 20px;
+    padding: 10px;
+  }
+  #all-r-l > div > div > div {
+    width: 80px;
+    height: 100%;
+    float: left;
+    transition: 0.2s;
+  }
+  #all-r-l > div > div:hover > div {
+    transform: scaleX(-1);
+  }
+  /* big-pic */
+  #big-pic {
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+    background-color: white;
+  }
+  #big-pic > div {
+    height: 100vh;
+    width: 100%;
+    padding: 100px 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #big-pic > div > div {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+  }
+  #big-pic h6 {
+    width: 100%;
+    font-weight: 400;
+    margin-top: 100px;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  #big-pic h2 {
+    width: 100%;
+    font-size: 37px;
+    font-weight: 450;
+    margin: 0px 0 10px 0;
+  }
+  #big-pic p {
+    width: 100%;
+    line-height: 25px;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+  }
+  #big-pic .bak-color {
+    background-color: rgba(228, 228, 228, 0.267);
+    width: 100%;
+  }
+  #big-pic .pic-big {
+    width: 49%;
+    height: 100vh;
+  }
+  /* footer */
+  footer {
+    width: 100%;
+    height: 300px;
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+  footer > div {
+    height: 30px;
+    margin: auto;
+  }
+  footer h6 {
+    color: rgb(255, 81, 81);
+    text-align: center;
+    font-size: 17px;
+    height: fit-content;
+  }
+  footer h2 {
+    text-align: center;
+    height: fit-content;
+    width: 70%;
+    height: 100px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+  }
+  footer div:nth-child(3) {
+    width: fit-content;
+    margin: 150px auto 0;
+    display: block;
+    height: 50px;
+  }
+  #gotop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+    display: none;
+    z-index: 98;
+  }
+  .hide {
+    display: none !important;
+  }
+}
+/* رسپانسیو پی سی */
+@media (min-width: 1200px) {
+  /* header */
+  header {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+  }
+  header > div {
+    width: 50%;
+    padding: 0 20px;
+    float: left;
+    margin: 0px 0 0 0;
+    height: 100%;
+    color: white;
+  }
+  #bixom {
+    width: 152px;
+    margin: 85px 0px 0 10px;
+  }
+  #lcenter {
+    width: 100%;
+    margin: 100px auto 30px;
+    font-size: 30px;
+    line-height: 73px;
+  }
+  .pur {
+    width: 180px;
+    height: 50px;
+    padding: 14px 25px;
+    border-radius: 60px;
+    margin: 20px 10px;
+    background-color: #1f150c;
+  }
+  .pur > a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+  }
+  .pur > a > i {
+    width: 15px;
+    height: 15px;
+    color: white;
+    margin: 3px 0 0 5px;
+  }
+}
+@media (min-width: 1200px) and (max-height: 520px) {
+  #bixom {
+    width: 152px;
+    margin: 35px 0px 0 10px;
+  }
+  #lcenter {
+    width: 100%;
+    margin: 50px auto 30px;
+    font-size: 30px;
+    line-height: 73px;
+  }
+  .pur {
+    width: 180px;
+    height: 50px;
+    padding: 14px 25px;
+    border-radius: 60px;
+    margin: 20px 10px;
+    background-color: #1f150c;
+  }
+}
+@media (min-width: 1200px) {
+  #hright {
+    display: flex;
+    flex-flow: row;
+  }
+  #hright > div {
+    float: left;
+    width: 290px;
+  }
+  #hright > div > div {
+    width: 250px;
+    height: 230px;
+    margin: 40px 0 0 0;
+  }
+  #rright {
+    margin: 376px 20px 0;
+    display: block;
+  }
+  #rleft {
+    margin: 103px 20px 0;
+    display: block;
+  }
+}
+@media (min-width: 1200px) and (max-height: 920px) {
+  #rleft {
+    margin: 33px 20px 0;
+    display: block;
+  }
+  #rright {
+    margin: 36px 20px 0;
+    display: block;
+  }
+  #hide {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* main */
+  main {
+    width: 100%;
+  }
+  #mytop {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    padding: 60px 80px;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #mytop > div {
+    width: 24%;
+    height: 350px;
+  }
+  #mytop > div > h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px auto;
+    text-align: center;
+  }
+  #mytop > div > p {
+    width: 100%;
+    margin-top: 16px;
+    line-height: 30px;
+    text-align: center;
+    font-size: medium;
+    color: rgb(82, 82, 82);
+  }
+  #mytop > div > div {
+    width: 75%;
+    margin: auto;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 1s;
+  }
+  #mytop > div > div:hover {
+    box-shadow: 5px 5px 25px gray;
+  }
+  /* explore */
+  #explore {
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+    background-color: rgb(29, 29, 29);
+  }
+  #number {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+  #number > span {
+    width: 50%;
+    height: 100%;
+    font-size: 130px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: white;
+  }
+  #five {
+    text-align: end;
+  }
+  #explore > div:nth-child(2) {
+    height: 100px;
+    width: 65%;
+    margin: 30px auto 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+  }
+  #explore > div#ul {
+    height: 30%;
+    width: 70%;
+    color: white;
+    margin: auto;
+  }
+  #explore > div#ul > ul {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px 37px;
+  }
+  #explore > div#ul > ul > li {
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+  }
+  #explore > div#ul > ul > li > span {
+    display: block;
+  }
+  #explore > div#mypic {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+  }
+  /* ul li */
+  #filter {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #filter > div#ul2 {
+    width: 100%;
+    height: 50px;
+    color: white;
+  }
+  #filter > div#ul2 > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 0 30px;
+  }
+  #filter > div#ul2 > ul > li {
+    width: fit-content;
+    height: 100%;
+    padding: 0 20px;
+    align-items: center;
+    line-height: 50px;
+  }
+  #filter > div#ul2 > ul > li:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+  }
+  .activ {
+    background-color: rgb(58, 58, 58);
+  }
+  /* pic tall */
+  #pic-tall {
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    color: white;
+  }
+  #pic-tall > div {
+    width: 21%;
+    margin: 40px 10px 70px;
+    overflow: hidden;
+    height: 80vh;
+    float: left;
+    position: relative;
+    cursor: pointer;
+  }
+  #pic-tall > div > div:nth-child(1) {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+    float: left;
+    position: relative;
+  }
+  #pic-tall > div > div:nth-child(1) > img {
+    width: 100%;
+    height: 220%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 5s;
+  }
+  #pic-tall > div > div#tall-top img {
+    left: 0;
+    top: -80%;
+  }
+  #pic-tall > div > div:nth-child(1):hover > img {
+    top: -120%;
+    left: 0;
+  }
+  #pic-tall > div > div:nth-child(2) {
+    width: fit-content;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+  #pic-tall > div > div.sing {
+    bottom: 120px;
+    left: 40px;
+  }
+  #pic-tall > div > div > a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 25px;
+    color: #000;
+  }
+  #pic-tall > div > div > a.single {
+    width: 50%;
+    float: left;
+  }
+  #pic-tall > div > div > a:hover {
+    background-color: rgb(24, 9, 39);
+    color: white;
+  }
+  #pic-tall > div:hover > div {
+    display: block;
+  }
+  #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  #pic-tall > div > div > h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    cursor: pointer;
+    color: gray;
+  }
+  #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  #pic-tall > div > div > div.tall-top {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    color: gray;
+    display: block;
+  }
+  #pic-tall > div > div > div.tall-top h5 {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    display: block;
+  }
+  /* all-r-l */
+  .auto {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+  }
+  #all-r-l {
+    width: 93%;
+    margin: auto;
+    height: 1750px;
+  }
+  #all-r-l > div {
+    width: 46%;
+    height: 83%;
+    float: left;
+    background-color: white;
+    margin: 120px 2%;
+  }
+  #all-r-l > div > div {
+    width: 100%;
+    height: 110px;
+    margin: 50px 15px;
+    padding: 7px;
+  }
+  #all-r-l > div > div.top {
+    width: 100%;
+    text-align: start;
+    height: fit-content;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  #all-r-l > div > div.top > h5 {
+    font-size: 35px;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  #all-r-l > div > div.top > p {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  #all-r-l > div > div > h5 {
+    width: 67%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 450;
+  }
+  #rtl > p {
+    font-size: 16px;
+    height: 140px;
+    color: gray;
+    margin: 0 10px 0 0;
+    line-height: 70px;
+    padding: 0 10px;
+  }
+  #all-r-l > div > div > p {
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+    color: gray;
+    line-height: 30px;
+    padding: 10px;
+  }
+  #all-r-l > div > div > div {
+    width: 80px;
+    height: 100%;
+    float: left;
+    transition: 0.2s;
+  }
+  #all-r-l > div > div:hover > div {
+    transform: scaleX(-1);
+  }
+  /* big-pic */
+  #big-pic {
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+    background-color: white;
+  }
+  #big-pic > div {
+    height: 100vh;
+    width: 100%;
+    padding: 50px 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #big-pic > div > div {
+    width: 50%;
+    height: 60vh;
+    float: left;
+    padding: 50px;
+  }
+  #big-pic h6 {
+    width: 100%;
+    font-weight: 400;
+    margin-top: 120px;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  #big-pic h2 {
+    width: 100%;
+    font-size: 48px;
+    font-weight: 450;
+    margin: 0px 0 10px 0;
+  }
+  #big-pic p {
+    width: 100%;
+    line-height: 25px;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+  }
+  #big-pic .bak-color {
+    background-color: rgba(228, 228, 228, 0.267);
+    width: 100%;
+  }
+  #big-pic .pic-big {
+    width: 49%;
+  }
+  /* footer */
+  footer {
+    width: 100%;
+    position: static;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+  }
+  footer > div {
+    height: 30px;
+    margin: auto;
+  }
+  footer h6 {
+    color: rgb(255, 81, 81);
+    text-align: center;
+    font-size: 17px;
+    height: fit-content;
+  }
+  footer h2 {
+    text-align: center;
+    height: fit-content;
+    width: 70%;
+    height: 100px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+  }
+  footer div:nth-child(3) {
+    width: fit-content;
+    margin: 150px auto 0;
+    display: block;
+    height: 50px;
+  }
+  #gotop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 6px;
+    right: 5px;
+    display: none;
+    z-index: 98;
+  }
+  .hide {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
