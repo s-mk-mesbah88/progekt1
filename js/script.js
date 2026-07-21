@@ -169,19 +169,13 @@ $(document).ready(function () {
         if ($('#all').attr('class') == 'a activ') {
             $('.c').fadeIn(400);
         }if ($('#mian').attr('class') == 'a activ') {
-
             $('.c').fadeOut(600);
-
             $('.main').fadeIn(400);
         }if ($('#rtl').attr('class') == 'a activ') {
-
             $('.c').fadeOut(600);
-
             $('.rtl').fadeIn(400);
         }if ($('#dark').attr('class') == 'a activ') {
-
             $('.c').fadeOut(600);
-
             $('.dark').fadeIn(400);
         }
     })
@@ -203,33 +197,33 @@ $(document).ready(function () {
         if (w <= '600'){
             $('.main2').fadeOut()
         }else{
-            $('.main2').fadein()
+            $('.main2').fadeIn()
         }
-        console.log(w);
         
     }
     mymain3()
 
     function mytop() {
         let h = $(window).height();
+        console.log(h);
         if(h < '600' ){
-            h = h / 2 -120;
+            h = h / 2;
             document.getElementById('main2').style.top = h + 'px';
-            
+            console.log(h);
         }else{
-            h = h / 2 - 50;
+            h = h / 2;
             document.getElementById('main2').style.top = h + 'px';
-            
+            console.log(h);
         }
-
         if(h > '600' ){
-            h = h / 2 - 70;
+            h = h / 2;
             document.getElementById('main1').style.top = h + 'px';
+            console.log(h);
         }else{
-            h = h / 2 - 120;
+            h = h / 2;
             document.getElementById('main1').style.top = h + 'px';
+            console.log(h);
         }
-
     }
 
     mytop()

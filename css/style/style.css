@@ -20,7 +20,6 @@ body {
 #main1 {
   width: 50px;
   height: 170px;
-  top: 420px;
   right: -8px;
   border-radius: 9px;
   position: fixed;
@@ -28,17 +27,14 @@ body {
   background-color: white;
   box-shadow: 0px 0px 6px gray;
 }
-
 #main1 > div {
   width: 60%;
   height: 70%;
   margin: 10px 0 10px 5px;
 }
-
 #main1 > div > div {
   position: relative;
 }
-
 #main1 > div > div > a {
   display: block;
   margin: 0px 5px 0px 5px;
@@ -46,16 +42,10 @@ body {
   height: 50px;
   cursor: pointer;
 }
-
 #main1 > div > div > a > svg {
   width: 100%;
   height: 100%;
 }
-
-#main1 img {
-  object-fit: contain;
-}
-
 #main1 > div > div > a > div {
   width: 100px;
   height: 50px;
@@ -71,9 +61,11 @@ body {
   color: rgb(97, 161, 0);
   display: none;
 }
-
-#main1 > div > div > a:hover > div {
+#main1 > div > div a:hover > div {
   display: block;
+}
+#main1 img {
+  object-fit: contain;
 }
 
 .main2 {
@@ -88,16 +80,14 @@ body {
   overflow: hidden;
   transition: 1s;
 }
-
 .main2 > div {
   width: 45%;
   margin: 8px 0 0 30px;
   overflow: hidden;
 }
-
 .main2 > input,
-select,
-span {
+.main2 select,
+.main2 span {
   display: none;
 }
 
@@ -113,7 +103,6 @@ span {
   box-shadow: 0px 0px 1px gray;
   overflow: visible;
 }
-
 .main3 > span.close {
   font-size: 14px;
   border-radius: 50%;
@@ -133,13 +122,11 @@ span {
   transition: all 0.5s ease;
   cursor: pointer;
 }
-
 .main3 > div {
   width: 80%;
   height: 69px;
   margin: 10px auto;
 }
-
 .main3 > .divcolor {
   width: 30px;
   height: 30px;
@@ -149,7 +136,6 @@ span {
   position: relative;
   border: 1px solid black;
 }
-
 .main3 input {
   display: block;
   width: 300px;
@@ -158,7 +144,6 @@ span {
   left: -30px;
   top: -30px;
 }
-
 .main3 > p {
   width: 30px;
   font-size: 12px;
@@ -167,7 +152,6 @@ span {
   padding: 0;
   text-align: center;
 }
-
 .main3 > .select {
   display: block;
   width: 130px;
@@ -183,8 +167,7 @@ span {
   border: 1px solid white;
   cursor: pointer;
 }
-
-.main3 .select option {
+.main3 > .select option {
   width: 100%;
   padding: 5px;
   height: 30px;
@@ -194,13 +177,7 @@ span {
   cursor: pointer;
   background-color: white;
 }
-
-.main3 .select option div {
-  width: 100%;
-  height: 100%;
-}
-
-.main3 .select option:hover {
+.main3 > .select option:hover {
   background-color: #f6f6f6;
 }
 
@@ -216,13 +193,13 @@ span {
     height: 100%;
     overflow: hidden;
   }
-  #bixom {
+  header #bixom {
     display: block;
     width: 200px;
     height: 100px;
     margin: 20px auto 25px;
   }
-  #lcenter {
+  header #lcenter {
     width: 90%;
     height: fit-content;
     font-size: 25px;
@@ -230,7 +207,7 @@ span {
     color: white;
     margin: auto;
   }
-  .pur {
+  header .pur {
     width: 180px;
     height: 50px;
     padding: 14px 25px;
@@ -238,7 +215,7 @@ span {
     background-color: #1f150c;
     margin: 25px auto;
   }
-  .pur > a {
+  header .pur > a {
     width: 100%;
     height: 100%;
     color: white;
@@ -247,35 +224,35 @@ span {
     display: block;
     text-decoration: none;
   }
-  .pur > a > i {
+  header .pur > a > i {
     width: 15px;
     height: 15px;
     color: white;
     margin: 3px 0 0 5px;
   }
-  #rleft {
+  header .hright div {
+    width: 200px;
+    height: 200px;
+  }
+  header #rleft {
     width: 100%;
     height: 50%;
     display: none;
   }
-  .hright div {
-    width: 200px;
-    height: 200px;
-  }
-  #rright {
+  header #rright {
     display: none;
   }
 }
 @media (max-width: 599px) and (max-height: 920px) {
-  #hide {
+  header #hide {
     display: none;
   }
 }
 @media (max-width: 599px) and (max-height: 640px) {
-  #hright {
+  header #hright {
     display: none;
   }
-  #hleft {
+  header #hleft {
     height: 100%;
   }
 }
@@ -285,8 +262,9 @@ span {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
+    /*#mytop*/
   }
-  #mytop {
+  main #mytop {
     background-color: white;
     width: 100%;
     margin: auto;
@@ -297,12 +275,12 @@ span {
     justify-content: space-between;
     gap: 20px;
   }
-  #mytop > div {
+  main #mytop > div {
     height: 40vh;
     width: 100%;
     margin-top: 30px;
   }
-  #mytop > div > div {
+  main #mytop > div > div {
     width: 250px;
     height: 160px;
     margin: 0 auto 10px;
@@ -310,33 +288,35 @@ span {
     border-radius: 17px;
     box-shadow: 5px 4px 10px gray;
   }
-  #mytop > div > h5 {
+  main #mytop > div > h5 {
     width: 250px;
     text-align: center;
     margin: 25px auto;
     font-size: 18px;
     font-weight: 500;
   }
-  #mytop > div > p {
+  main #mytop > div > p {
     width: 366px;
     margin: auto;
     font-size: medium;
     text-align: center;
     color: rgb(82, 82, 82);
   }
-  /*explore */
-  #explore {
+  main {
+    /*explore */
+  }
+  main #explore {
     width: 100%;
     height: 100vh;
     background-color: rgb(29, 29, 29);
     color: white;
   }
-  #number {
+  main #explore #number {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
   }
-  #number > span {
+  main #explore #number > span {
     width: 50%;
     height: 100%;
     font-size: 100px;
@@ -345,10 +325,10 @@ span {
     font-weight: bold;
     color: white;
   }
-  #five {
+  main #explore #number #five {
     text-align: end;
   }
-  #explore > div:nth-child(2) {
+  main #explore > div:nth-child(2) {
     height: fit-content;
     width: 100%;
     margin: 30px auto 0;
@@ -357,13 +337,13 @@ span {
     font-size: 30px;
     text-align: center;
   }
-  #explore > div#ul {
+  main #explore > div#ul {
     height: 30%;
     width: 100%;
     color: white;
     margin: 10px 0;
   }
-  #explore > div#ul > ul {
+  main #explore > div#ul > ul {
     width: 100%;
     text-align: center;
     margin: 40px auto;
@@ -373,31 +353,33 @@ span {
     justify-content: center;
     gap: 20px 40px;
   }
-  #explore > div#ul > ul > li {
+  main #explore > div#ul > ul > li {
     width: fit-content;
     font-size: 20px;
     color: white;
   }
-  #explore > div#ul > ul > li > span {
+  main #explore > div#ul > ul > li > span {
     display: block;
   }
-  #explore > div#mypic {
+  main #explore > div#mypic {
     width: 100%;
     margin-top: 80px;
     height: 50px;
   }
-  /* filter */
-  #filter {
+  main {
+    /* filter */
+  }
+  main #filter {
     width: 100%;
     padding: 30px 0;
   }
-  #filter > div#ul2 {
+  main #filter > div#ul2 {
     width: 100%;
     height: fit-content;
     color: white;
     margin: 0px auto;
   }
-  #filter > div#ul2 > ul {
+  main #filter > div#ul2 > ul {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -407,7 +389,7 @@ span {
     align-content: space-between;
     gap: 0 30px;
   }
-  #filter > div#ul2 > ul > li {
+  main #filter > div#ul2 > ul > li {
     width: 40%;
     height: 25%;
     padding: 0;
@@ -415,14 +397,14 @@ span {
     line-height: 50px;
     text-align: center;
   }
-  #filter > div#ul2 > ul > li:hover {
+  main #filter > div#ul2 > ul li:hover {
     background-color: rgb(58, 58, 58);
     cursor: pointer;
   }
-  .activ {
+  main #filter > div#ul2 .activ {
     background-color: rgb(58, 58, 58);
   }
-  #pic-tall {
+  main #filter #pic-tall {
     width: 100%;
     padding: 20px;
     color: white;
@@ -432,13 +414,13 @@ span {
     justify-content: center;
     gap: 50px 0;
   }
-  #pic-tall > div {
+  main #filter #pic-tall > div {
     width: 90%;
     height: 90vh;
     overflow: hidden;
     cursor: pointer;
   }
-  #pic-tall > div > div:nth-child(1) {
+  main #filter #pic-tall > div > div:nth-child(1) {
     width: 100%;
     height: 80%;
     overflow: hidden;
@@ -447,16 +429,12 @@ span {
     position: relative;
     margin: 0 0;
   }
-  #pic-tall > div > div:nth-child(1) > img {
+  main #filter #pic-tall > div > div:nth-child(1) > div {
     width: 100%;
-    height: 250%;
+    height: 350%;
     border-radius: 15px;
   }
-  #pic-tall > div > div:nth-child(1):hover > img {
-    top: -120%;
-    left: 0;
-  }
-  #pic-tall > div > div:nth-child(2) {
+  main #filter #pic-tall > div > div:nth-child(1) > div:nth-child(2) {
     width: fit-content;
     height: 50px;
     position: absolute;
@@ -468,11 +446,11 @@ span {
     color: black;
     display: none;
   }
-  #pic-tall > div > div.sing {
+  main #filter #pic-tall > div > div:nth-child(1) > div:nth-child(2) > div.sing {
     bottom: 120px;
     left: 40px;
   }
-  #pic-tall > div > div > a {
+  main #filter #pic-tall > div > div:nth-child(1) > div:nth-child(2) > div.sing > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -481,21 +459,19 @@ span {
     line-height: 25px;
     color: #000;
   }
-  #pic-tall > div > div > a.single {
+  main #filter #pic-tall > div > div:nth-child(1) > div:nth-child(2) > div.sing > a > a.single {
     width: 50%;
     float: left;
   }
-  #pic-tall > div > div > a:hover {
+  main #filter #pic-tall > div > div:nth-child(1) > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
-  #pic-tall > div:hover > div {
-    display: block;
+  main #filter #pic-tall > div > div:nth-child(1):hover > div {
+    top: -120%;
+    left: 0;
   }
-  #pic-tall > div:hover > div:nth-child(1) {
-    filter: brightness(50%);
-  }
-  #pic-tall > div > div > h5 {
+  main #filter #pic-tall > div > div > h5 {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -503,10 +479,7 @@ span {
     cursor: pointer;
     color: gray;
   }
-  #pic-tall > div:hover > div > h5 {
-    color: white;
-  }
-  #pic-tall > div > div > div.tall-top {
+  main #filter #pic-tall > div > div > div.tall-top {
     width: 100%;
     height: 100px;
     position: relative;
@@ -516,68 +489,75 @@ span {
     color: gray;
     display: block;
   }
-  #pic-tall > div > div#tall-top img {
-    position: absolute;
-    left: 0;
-    top: -100%;
-  }
-  #pic-tall > div > div > div.tall-top h5 {
+  main #filter #pic-tall > div > div > div.tall-top h5 {
     width: 100%;
     height: 100%;
     line-height: 100px;
     text-align: center;
     display: block;
   }
-  .myhide {
+  main #filter #pic-tall > div > div#tall-top div {
+    width: 100%;
+    height: 100%;
+  }
+  main #filter #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  main #filter #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  main #filter #pic-tall .myhide {
     display: none;
   }
-  /* all-r-l */
-  .auto {
+  main {
+    /* all-r-l */
+  }
+  main .auto {
     width: 100%;
     padding: 20px 0;
     background-color: rgb(238, 238, 238);
   }
-  #all-r-l {
+  main .auto #all-r-l {
     width: 93%;
     margin: auto;
     padding: 20px 0;
   }
-  #all-r-l > div {
+  main .auto #all-r-l > div {
     width: 100%;
     background-color: white;
     margin: 30px 5px;
     padding: 20px 0;
   }
-  #all-r-l > div > div {
+  main .auto #all-r-l > div > div {
     width: 100%;
     height: 130px;
     margin: 50px 15px;
     padding: 10px 7px;
   }
-  #all-r-l > div > div.top {
+  main .auto #all-r-l > div > div.top {
     width: 100%;
     text-align: center;
     height: fit-content;
     margin: 20px auto 0;
     padding: 0;
   }
-  #all-r-l > div > div.top > h5 {
+  main .auto #all-r-l > div > div.top > h5 {
     font-size: 25px;
     width: 100%;
     padding: 0 20px;
     font-weight: 700;
   }
-  #all-r-l > div > div.top > p {
+  main .auto #all-r-l > div > div.top > p {
     width: 100%;
     padding: 10px 20px;
   }
-  #all-r-l > div > div > h5 {
+  main .auto #all-r-l > div > div > h5 {
     width: 70%;
     margin: auto;
     font-size: 17px;
     font-weight: 450;
   }
-  #rtl > p {
+  main .auto #all-r-l #rtl > p {
     font-size: 16px;
     height: 140px;
     color: gray;
@@ -585,51 +565,53 @@ span {
     line-height: 70px;
     padding: 0 10px;
   }
-  #all-r-l > div > div > p {
-    font-size: 13px;
-    color: gray;
-    line-height: 20px;
-    padding: 10px;
-  }
-  #all-r-l > div > div > div {
+  main .auto #all-r-l > div > div > div {
     width: 80px;
     height: 100%;
     margin: 0 10px 0 0;
     float: left;
     transition: 0.2s;
   }
-  #all-r-l > div > div:hover > div {
+  main .auto #all-r-l > div > div > p {
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+    padding: 10px;
+  }
+  main .auto #all-r-l > div > div:hover > div {
     transform: scaleX(-1);
   }
-  /* big-pic */
-  #big-pic {
+  main {
+    /* big-pic */
+  }
+  main #big-pic {
     width: 100%;
     padding: 40px 0px;
     background-color: white;
   }
-  #big-pic > div {
+  main #big-pic > div {
     height: 100vh;
     width: 100%;
     padding: 30px 40px;
   }
-  #big-pic > div > div {
+  main #big-pic > div > div {
     width: 100%;
     height: fit-content;
     padding: 30px 5px;
   }
-  #big-pic h6 {
+  main #big-pic h6 {
     width: 100%;
     height: fit-content;
     font-weight: 400;
     font-size: 18px;
   }
-  #big-pic h2 {
+  main #big-pic h2 {
     width: 100%;
     font-size: 30px;
     height: fit-content;
     font-weight: 450;
   }
-  #big-pic p {
+  main #big-pic p {
     width: 100%;
     line-height: 30px;
     color: gray;
@@ -638,13 +620,13 @@ span {
     font-size: 14px;
     text-align: justify;
   }
-  #big-pic .bak-color {
+  main #big-pic .bak-color {
     background-color: rgba(228, 228, 228, 0.267);
     width: 100%;
     height: 100vh;
     margin: 0;
   }
-  #big-pic .pic-big {
+  main #big-pic .pic-big {
     width: 100%;
     height: 50%;
   }
@@ -707,13 +689,13 @@ span {
     height: 50%;
     overflow: hidden;
   }
-  #bixom {
+  header #bixom {
     display: block;
     width: 200px;
     height: 100px;
     margin: 20px auto 25px;
   }
-  #lcenter {
+  header #lcenter {
     width: 90%;
     height: fit-content;
     font-size: 25px;
@@ -721,7 +703,7 @@ span {
     color: white;
     margin: auto;
   }
-  .pur {
+  header .pur {
     width: 180px;
     height: 50px;
     padding: 14px 25px;
@@ -729,7 +711,7 @@ span {
     background-color: #1f150c;
     margin: 25px auto;
   }
-  .pur > a {
+  header .pur > a {
     width: 100%;
     height: 100%;
     color: white;
@@ -738,13 +720,13 @@ span {
     display: block;
     text-decoration: none;
   }
-  .pur > a > i {
+  header .pur > a > i {
     width: 15px;
     height: 15px;
     color: white;
     margin: 3px 0 0 5px;
   }
-  #rleft {
+  header #rleft {
     width: 100%;
     height: 50%;
     display: flex;
@@ -753,16 +735,16 @@ span {
     justify-content: center;
     gap: 30px;
   }
-  .hright div {
+  header .hright div {
     width: 200px;
     height: 200px;
   }
-  #rright {
+  header #rright {
     display: none;
   }
 }
 @media (min-width: 500px) and (max-height: 920px) {
-  #hide {
+  header #hide {
     display: none;
   }
 }
@@ -772,8 +754,9 @@ span {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
+    /*#mytop*/
   }
-  #mytop {
+  main #mytop {
     background-color: white;
     width: 100%;
     margin: auto;
@@ -784,12 +767,12 @@ span {
     justify-content: space-between;
     gap: 20px;
   }
-  #mytop > div {
+  main #mytop > div {
     height: 40vh;
     width: 100%;
     margin-top: 30px;
   }
-  #mytop > div > div {
+  main #mytop > div > div {
     width: 250px;
     height: 160px;
     margin: 0 auto 10px;
@@ -797,32 +780,35 @@ span {
     border-radius: 17px;
     box-shadow: 5px 4px 10px gray;
   }
-  #mytop > div > h5 {
+  main #mytop > div > h5 {
     width: 250px;
     text-align: center;
     margin: 25px auto;
     font-size: 18px;
     font-weight: 500;
   }
-  #mytop > div > p {
+  main #mytop > div > p {
     width: 366px;
     margin: auto;
     font-size: medium;
     text-align: center;
     color: rgb(82, 82, 82);
   }
-  #explore {
+  main {
+    /*#explore*/
+  }
+  main #explore {
     width: 100%;
     height: 100vh;
     background-color: rgb(29, 29, 29);
     color: white;
   }
-  #number {
+  main #explore #number {
     width: 100%;
     height: 140px;
     margin-bottom: 10px;
   }
-  #number > span {
+  main #explore #number > span {
     width: 50%;
     height: 100%;
     font-size: 130px;
@@ -831,10 +817,10 @@ span {
     font-weight: bold;
     color: white;
   }
-  #five {
+  main #explore #number #five {
     text-align: end;
   }
-  #explore > div:nth-child(2) {
+  main #explore > div:nth-child(2) {
     height: fit-content;
     width: 100%;
     margin: 30px auto 0;
@@ -843,13 +829,13 @@ span {
     font-size: 35px;
     text-align: center;
   }
-  #explore > div#ul {
+  main #explore > div#ul {
     height: 30%;
     width: 100%;
     color: white;
     margin: 10px 0;
   }
-  #explore > div#ul > ul {
+  main #explore > div#ul > ul {
     width: 100%;
     text-align: center;
     margin: 40px auto;
@@ -859,31 +845,33 @@ span {
     justify-content: center;
     gap: 24px 47px;
   }
-  #explore > div#ul > ul > li {
+  main #explore > div#ul > ul > li {
     width: fit-content;
     font-size: 20px;
     color: white;
   }
-  #explore > div#ul > ul > li > span {
+  main #explore > div#ul > ul > li > span {
     display: block;
   }
-  #explore > div#mypic {
+  main #explore > div#mypic {
     width: 100%;
     margin-top: 30px;
     height: 50px;
   }
-  /* filter */
-  #filter {
+  main {
+    /* filter */
+  }
+  main #filter {
     width: 100%;
     margin-top: 30px;
   }
-  #filter > div#ul2 {
+  main #filter > div#ul2 {
     width: 100%;
     height: 50px;
     color: white;
     margin: 0px auto;
   }
-  #filter > div#ul2 > ul {
+  main #filter > div#ul2 > ul {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -892,21 +880,21 @@ span {
     justify-content: center;
     gap: 0 30px;
   }
-  #filter > div#ul2 > ul > li {
+  main #filter > div#ul2 > ul > li {
     width: fit-content;
     height: 100%;
     padding: 0 20px;
     align-items: center;
     line-height: 50px;
   }
-  #filter > div#ul2 > ul > li:hover {
+  main #filter > div#ul2 > ul > li:hover {
     background-color: rgb(58, 58, 58);
     cursor: pointer;
   }
-  .activ {
+  main #filter > div#ul2 > ul .activ {
     background-color: rgb(58, 58, 58);
   }
-  #pic-tall {
+  main #filter #pic-tall {
     width: 100%;
     padding: 20px;
     color: white;
@@ -916,13 +904,13 @@ span {
     justify-content: space-between;
     gap: 50px 10px;
   }
-  #pic-tall > div {
+  main #filter #pic-tall > div {
     width: 48%;
     height: 90vh;
     overflow: hidden;
     cursor: pointer;
   }
-  #pic-tall > div > div:nth-child(1) {
+  main #filter #pic-tall > div > div:nth-child(1) {
     width: 100%;
     height: 80%;
     overflow: hidden;
@@ -931,16 +919,20 @@ span {
     position: relative;
     margin: 0 0;
   }
-  #pic-tall > div > div:nth-child(1) > img {
+  main #filter #pic-tall > div > div:nth-child(1) > div {
+    position: absolute;
     width: 100%;
-    height: 250%;
+    height: 220%;
+    left: 0;
+    top: 0;
+    transition: 4s;
     border-radius: 15px;
   }
-  #pic-tall > div > div:nth-child(1):hover > img {
+  main #filter #pic-tall > div > div:nth-child(1):hover > div {
     top: -120%;
     left: 0;
   }
-  #pic-tall > div > div:nth-child(2) {
+  main #filter #pic-tall > div > div:nth-child(2) {
     width: fit-content;
     height: 50px;
     position: absolute;
@@ -952,11 +944,11 @@ span {
     color: black;
     display: none;
   }
-  #pic-tall > div > div.sing {
+  main #filter #pic-tall > div > div:nth-child(2) {
     bottom: 120px;
     left: 40px;
   }
-  #pic-tall > div > div > a {
+  main #filter #pic-tall > div > div > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -965,21 +957,15 @@ span {
     line-height: 25px;
     color: #000;
   }
-  #pic-tall > div > div > a.single {
+  main #filter #pic-tall > div > div > a.single {
     width: 50%;
     float: left;
   }
-  #pic-tall > div > div > a:hover {
+  main #filter #pic-tall > div > div > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
-  #pic-tall > div:hover > div {
-    display: block;
-  }
-  #pic-tall > div:hover > div:nth-child(1) {
-    filter: brightness(50%);
-  }
-  #pic-tall > div > div > h5 {
+  main #filter #pic-tall > div > div > h5 {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -987,10 +973,7 @@ span {
     cursor: pointer;
     color: gray;
   }
-  #pic-tall > div:hover > div > h5 {
-    color: white;
-  }
-  #pic-tall > div > div > div.tall-top {
+  main #filter #pic-tall > div > div > div.tall-top {
     width: 100%;
     height: 100px;
     position: relative;
@@ -1000,65 +983,81 @@ span {
     color: gray;
     display: block;
   }
-  #pic-tall > div > div#tall-top img {
-    position: absolute;
-    left: 0;
-    top: -100%;
-  }
-  #pic-tall > div > div > div.tall-top h5 {
+  main #filter #pic-tall > div > div > div.tall-top h5 {
     width: 100%;
     height: 100%;
     line-height: 100px;
     text-align: center;
     display: block;
   }
-  /* all-r-l */
-  .auto {
+  main #filter #pic-tall > div:hover > div {
+    display: block;
+  }
+  main #filter #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  main #filter #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  main #filter #pic-tall > div > div#tall-top div {
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    /* all-r-l */
+  }
+  main .auto {
     width: 100%;
     padding: 20px 0;
     background-color: rgb(238, 238, 238);
   }
-  #all-r-l {
+  main .auto #all-r-l {
     width: 93%;
     margin: auto;
     padding: 20px 0;
   }
-  #all-r-l > div {
+  main .auto #all-r-l > div {
     width: 100%;
     background-color: white;
     margin: 30px 5px;
     padding: 20px 0;
   }
-  #all-r-l > div > div {
+  main .auto #all-r-l > div > div {
     width: 100%;
     height: 110px;
     margin: 50px 15px;
     padding: 10px 7px;
   }
-  #all-r-l > div > div.top {
+  main .auto #all-r-l > div > div > h5 {
+    width: 67%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 450;
+  }
+  main .auto #all-r-l > div > div > p {
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+    padding: 10px;
+  }
+  main .auto #all-r-l > div > div.top {
     width: 100%;
     text-align: center;
     height: fit-content;
     margin: 20px auto 0;
     padding: 0;
   }
-  #all-r-l > div > div.top > h5 {
+  main .auto #all-r-l > div > div.top > h5 {
     font-size: 27px;
     width: 100%;
     padding: 0 20px;
     font-weight: 700;
   }
-  #all-r-l > div > div.top > p {
+  main .auto #all-r-l > div > div.top > p {
     width: 100%;
     padding: 10px 20px;
   }
-  #all-r-l > div > div > h5 {
-    width: 67%;
-    margin: auto;
-    font-size: 20px;
-    font-weight: 450;
-  }
-  #rtl > p {
+  main .auto #all-r-l #rtl > p {
     font-size: 16px;
     height: 140px;
     color: gray;
@@ -1066,51 +1065,47 @@ span {
     line-height: 70px;
     padding: 0 10px;
   }
-  #all-r-l > div > div > p {
-    font-size: 13px;
-    color: gray;
-    line-height: 20px;
-    padding: 10px;
-  }
-  #all-r-l > div > div > div {
+  main .auto #all-r-l > div > div > div {
     width: 80px;
     height: 100%;
     margin: 0 10px 0 0;
     float: left;
     transition: 0.2s;
   }
-  #all-r-l > div > div:hover > div {
+  main .auto #all-r-l > div > div:hover > div {
     transform: scaleX(-1);
   }
-  /* big-pic */
-  #big-pic {
+  main {
+    /* big-pic */
+  }
+  main #big-pic {
     width: 100%;
     padding: 40px 0px;
     background-color: white;
   }
-  #big-pic > div {
+  main #big-pic > div {
     height: 100vh;
     width: 100%;
     padding: 30px 40px;
   }
-  #big-pic > div > div {
+  main #big-pic > div > div {
     width: 100%;
     height: fit-content;
     padding: 30px 5px;
   }
-  #big-pic h6 {
+  main #big-pic h6 {
     width: 100%;
     height: fit-content;
     font-weight: 400;
     font-size: 18px;
   }
-  #big-pic h2 {
+  main #big-pic h2 {
     width: 100%;
     font-size: 30px;
     height: fit-content;
     font-weight: 450;
   }
-  #big-pic p {
+  main #big-pic p {
     width: 100%;
     line-height: 30px;
     color: gray;
@@ -1119,13 +1114,13 @@ span {
     font-size: 14px;
     text-align: justify;
   }
-  #big-pic .bak-color {
+  main #big-pic .bak-color {
     background-color: rgba(228, 228, 228, 0.267);
     width: 100%;
     height: 100vh;
     margin: 0;
   }
-  #big-pic .pic-big {
+  main #big-pic .pic-big {
     width: 100%;
     height: 50%;
   }
@@ -1189,20 +1184,20 @@ span {
     height: 60%;
     overflow: hidden;
   }
-  #bixom {
+  header #bixom {
     display: block;
     width: 200px;
     height: 100px;
     margin: 60px auto 25px;
   }
-  #lcenter {
+  header #lcenter {
     width: 90%;
     height: fit-content;
     font-size: 30px;
     color: white;
     margin: auto;
   }
-  .pur {
+  header .pur {
     width: 180px;
     height: 50px;
     padding: 14px 25px;
@@ -1210,7 +1205,7 @@ span {
     background-color: #1f150c;
     margin: 25px auto;
   }
-  .pur > a {
+  header .pur > a {
     width: 100%;
     height: 100%;
     color: white;
@@ -1219,13 +1214,13 @@ span {
     display: block;
     text-decoration: none;
   }
-  .pur > a > i {
+  header .pur > a > i {
     width: 15px;
     height: 15px;
     color: white;
     margin: 3px 0 0 5px;
   }
-  #hright {
+  header .pur #hright {
     height: fit-content;
     display: flex;
     flex-flow: row wrap;
@@ -1233,14 +1228,14 @@ span {
     justify-content: flex-start;
     gap: 0px;
   }
-  .hright {
+  header .pur .hright {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
     justify-content: flex-start;
     gap: 0px;
   }
-  .hright div {
+  header .pur .hright div {
     width: 200px;
     height: 200px;
   }
@@ -1249,8 +1244,9 @@ span {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
+    /*#mytop*/
   }
-  #mytop {
+  main #mytop {
     background-color: white;
     width: 100%;
     margin: 40px auto;
@@ -1261,11 +1257,11 @@ span {
     justify-content: space-between;
     gap: 20px;
   }
-  #mytop > div {
+  main #mytop > div {
     height: 25%;
     width: 40%;
   }
-  #mytop > div > div {
+  main #mytop > div > div {
     width: 250px;
     height: 160px;
     margin: 0 auto 10px;
@@ -1273,32 +1269,35 @@ span {
     border-radius: 17px;
     box-shadow: 5px 4px 10px gray;
   }
-  #mytop > div > h5 {
+  main #mytop > div > h5 {
     width: 250px;
     text-align: center;
     margin: 25px auto;
     font-size: 18px;
     font-weight: 500;
   }
-  #mytop > div > p {
+  main #mytop > div > p {
     width: 366px;
     margin: auto;
     font-size: medium;
     text-align: center;
     color: rgb(82, 82, 82);
   }
-  #explore {
+  main {
+    /*#explore*/
+  }
+  main #explore {
     width: 100%;
     height: 100vh;
     background-color: rgb(29, 29, 29);
     color: white;
   }
-  #number {
+  main #explore #number {
     width: 100%;
     height: 140px;
     margin-bottom: 30px;
   }
-  #number > span {
+  main #explore #number > span {
     width: 50%;
     height: 100%;
     font-size: 130px;
@@ -1307,10 +1306,10 @@ span {
     font-weight: bold;
     color: white;
   }
-  #five {
+  main #explore #number #five {
     text-align: end;
   }
-  #explore > div:nth-child(2) {
+  main #explore > div:nth-child(2) {
     height: 100px;
     width: 95%;
     margin: 30px auto 50px;
@@ -1319,14 +1318,14 @@ span {
     font-size: 50px;
     text-align: center;
   }
-  #explore > div#ul {
+  main #explore > div#ul {
     height: 30%;
     width: 90%;
     color: white;
     margin: 50px auto;
     margin: auto;
   }
-  #explore > div#ul > ul {
+  main #explore > div#ul > ul {
     width: 70%;
     text-align: center;
     margin: 40px auto;
@@ -1336,30 +1335,33 @@ span {
     justify-content: center;
     gap: 24px 47px;
   }
-  #explore > div#ul > ul > li {
+  main #explore > div#ul > ul > li {
     width: fit-content;
     font-size: 20px;
     color: white;
   }
-  #explore > div#ul > ul > li > span {
+  main #explore > div#ul > ul > li > span {
     display: block;
   }
-  #explore > div#mypic {
+  main #explore > div#mypic {
     width: 100%;
     margin-top: 20px;
     height: 50px;
   }
-  #filter {
+  main {
+    /*filter*/
+  }
+  main #filter {
     width: 100%;
     margin-top: 60px;
   }
-  #filter > div#ul2 {
+  main #filter > div#ul2 {
     width: 100%;
     height: 50px;
     color: white;
     margin: 30px auto;
   }
-  #filter > div#ul2 > ul {
+  main #filter > div#ul2 > ul {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -1368,22 +1370,24 @@ span {
     justify-content: center;
     gap: 0 30px;
   }
-  #filter > div#ul2 > ul > li {
+  main #filter > div#ul2 > ul > li {
     width: fit-content;
     height: 100%;
     padding: 0 20px;
     align-items: center;
     line-height: 50px;
   }
-  #filter > div#ul2 > ul > li:hover {
+  main #filter > div#ul2 > ul > li:hover {
     background-color: rgb(58, 58, 58);
     cursor: pointer;
   }
-  /*pic-tall */
-  .activ {
+  main #filter > div#ul2 > ul .activ {
     background-color: rgb(58, 58, 58);
   }
-  #pic-tall {
+  main #filter {
+    /*pic-tall */
+  }
+  main #filter #pic-tall {
     width: 100%;
     margin: auto;
     padding: 40px;
@@ -1394,7 +1398,7 @@ span {
     justify-content: space-between;
     gap: 60px 10px 60px;
   }
-  #pic-tall > div {
+  main #filter #pic-tall > div {
     width: 20%;
     overflow: hidden;
     height: 96vh;
@@ -1402,7 +1406,7 @@ span {
     cursor: pointer;
     margin: 30px auto;
   }
-  #pic-tall > div > div:nth-child(1) {
+  main #filter #pic-tall > div > div:nth-child(1) {
     width: 100%;
     height: 90%;
     overflow: hidden;
@@ -1411,7 +1415,7 @@ span {
     position: relative;
     margin: 0 0;
   }
-  #pic-tall > div > div:nth-child(1) > img {
+  main #filter #pic-tall > div > div:nth-child(1) > div {
     width: 100%;
     height: 220%;
     border-radius: 15px;
@@ -1420,15 +1424,15 @@ span {
     left: 0px;
     transition: 5s;
   }
-  #pic-tall > div > div#tall-top img {
-    left: 0;
-    top: -80%;
-  }
-  #pic-tall > div > div:nth-child(1):hover > img {
+  main #filter #pic-tall > div > div:nth-child(1):hover > div {
     top: -120%;
     left: 0;
   }
-  #pic-tall > div > div:nth-child(2) {
+  main #filter #pic-tall > div > div#tall-top div {
+    left: 0;
+    top: -80%;
+  }
+  main #filter #pic-tall > div > div:nth-child(2) {
     width: fit-content;
     height: 50px;
     position: absolute;
@@ -1439,35 +1443,27 @@ span {
     background-color: white;
     color: black;
     display: none;
-  }
-  #pic-tall > div > div.sing {
     bottom: 120px;
-    left: 40px;
+    left: 20px;
   }
-  #pic-tall > div > div > a {
+  main #filter #pic-tall > div > div > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
     display: inline-block;
     padding: 10px 20px;
-    line-height: 25px;
+    font-size: 12px;
     color: #000;
   }
-  #pic-tall > div > div > a.single {
+  main #filter #pic-tall > div > div > a.single {
     width: 50%;
     float: left;
   }
-  #pic-tall > div > div > a:hover {
+  main #filter #pic-tall > div > div > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
-  #pic-tall > div:hover > div {
-    display: block;
-  }
-  #pic-tall > div:hover > div:nth-child(1) {
-    filter: brightness(50%);
-  }
-  #pic-tall > div > div > h5 {
+  main #filter #pic-tall > div > div > h5 {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -1475,10 +1471,16 @@ span {
     cursor: pointer;
     color: gray;
   }
-  #pic-tall > div:hover > div > h5 {
+  main #filter #pic-tall > div:hover > div {
+    display: block;
+  }
+  main #filter #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  main #filter #pic-tall > div:hover > div > h5 {
     color: white;
   }
-  #pic-tall > div > div > div.tall-top {
+  main #filter #pic-tall > div > div > div.tall-top {
     width: 100%;
     height: 100px;
     position: absolute;
@@ -1488,68 +1490,45 @@ span {
     color: gray;
     display: block;
   }
-  #pic-tall > div > div > div.tall-top h5 {
+  main #filter #pic-tall > div > div > div.tall-top h5 {
     width: 100%;
     height: 100%;
     line-height: 100px;
     text-align: center;
     display: block;
   }
-  /* all-r-l */
-  .auto {
+  main {
+    /* all-r-l */
+  }
+  main .auto {
     width: 100%;
     background-color: rgb(238, 238, 238);
   }
-  #all-r-l {
+  main .auto #all-r-l {
     width: 93%;
     margin: auto;
     height: 1750px;
   }
-  #all-r-l > div {
+  main .auto #all-r-l > div {
     width: 46%;
     height: 83%;
     float: left;
     background-color: white;
     margin: 120px 2%;
   }
-  #all-r-l > div > div {
+  main .auto #all-r-l > div > div {
     width: 100%;
     height: 110px;
     margin: 50px 15px;
     padding: 7px;
   }
-  #all-r-l > div > div.top {
-    width: 100%;
-    text-align: start;
-    height: fit-content;
-    margin: 20px 0 0;
-    padding: 0;
-  }
-  #all-r-l > div > div.top > h5 {
-    font-size: 35px;
-    width: 100%;
-    padding: 0 20px;
-    font-weight: 700;
-  }
-  #all-r-l > div > div.top > p {
-    width: 100%;
-    padding: 10px 10px;
-  }
-  #all-r-l > div > div > h5 {
+  main .auto #all-r-l > div > div > h5 {
     width: 67%;
     margin: auto;
     font-size: 20px;
     font-weight: 450;
   }
-  #rtl > p {
-    font-size: 16px;
-    height: 140px;
-    color: gray;
-    margin: 0 10px 0 0;
-    line-height: 20px;
-    padding: 0 10px;
-  }
-  #all-r-l > div > div > p {
+  main .auto #all-r-l > div > div > div > div > p {
     font-size: 16px;
     width: 70%;
     margin: auto;
@@ -1557,23 +1536,50 @@ span {
     line-height: 20px;
     padding: 10px;
   }
-  #all-r-l > div > div > div {
+  main .auto #all-r-l > div > div.top {
+    width: 100%;
+    text-align: start;
+    height: fit-content;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  main .auto #all-r-l > div > div.top > h5 {
+    font-size: 35px;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  main .auto #all-r-l > div > div.top > p {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  main .auto #all-r-l #rtl > p {
+    font-size: 16px;
+    height: 140px;
+    color: gray;
+    margin: 0 10px 0 0;
+    line-height: 20px;
+    padding: 0 10px;
+  }
+  main .auto #all-r-l > div > div > div {
     width: 80px;
     height: 100%;
     float: left;
     transition: 0.2s;
   }
-  #all-r-l > div > div:hover > div {
+  main .auto #all-r-l > div > div:hover > div {
     transform: scaleX(-1);
   }
-  /* big-pic */
-  #big-pic {
+  main {
+    /* big-pic */
+  }
+  main #big-pic {
     width: 100%;
     padding: 0 20px;
     margin: auto;
     background-color: white;
   }
-  #big-pic > div {
+  main #big-pic > div {
     height: 100vh;
     width: 100%;
     padding: 100px 20px;
@@ -1582,26 +1588,26 @@ span {
     align-items: center;
     position: relative;
   }
-  #big-pic > div > div {
+  main #big-pic > div > div {
     width: 50%;
     height: 100%;
     float: left;
     padding: 50px;
   }
-  #big-pic h6 {
+  main #big-pic h6 {
     width: 100%;
     font-weight: 400;
     margin-top: 100px;
     font-size: 20px;
     padding: 10px 0;
   }
-  #big-pic h2 {
+  main #big-pic h2 {
     width: 100%;
     font-size: 37px;
     font-weight: 450;
     margin: 0px 0 10px 0;
   }
-  #big-pic p {
+  main #big-pic p {
     width: 100%;
     line-height: 25px;
     color: gray;
@@ -1609,11 +1615,11 @@ span {
     font-size: 20px;
     text-align: justify;
   }
-  #big-pic .bak-color {
+  main #big-pic .bak-color {
     background-color: rgba(228, 228, 228, 0.267);
     width: 100%;
   }
-  #big-pic .pic-big {
+  main #big-pic .pic-big {
     width: 49%;
     height: 100vh;
   }
@@ -1681,17 +1687,17 @@ span {
     height: 100%;
     color: white;
   }
-  #bixom {
+  header #bixom {
     width: 152px;
     margin: 85px 0px 0 10px;
   }
-  #lcenter {
+  header #lcenter {
     width: 100%;
     margin: 100px auto 30px;
     font-size: 30px;
     line-height: 73px;
   }
-  .pur {
+  header .pur {
     width: 180px;
     height: 50px;
     padding: 14px 25px;
@@ -1699,7 +1705,7 @@ span {
     margin: 20px 10px;
     background-color: #1f150c;
   }
-  .pur > a {
+  header .pur > a {
     width: 100%;
     height: 100%;
     color: white;
@@ -1708,7 +1714,7 @@ span {
     display: block;
     text-decoration: none;
   }
-  .pur > a > i {
+  header .pur > a > i {
     width: 15px;
     height: 15px;
     color: white;
@@ -1716,17 +1722,17 @@ span {
   }
 }
 @media (min-width: 1200px) and (max-height: 520px) {
-  #bixom {
+  header #bixom {
     width: 152px;
     margin: 35px 0px 0 10px;
   }
-  #lcenter {
+  header #lcenter {
     width: 100%;
     margin: 50px auto 30px;
     font-size: 30px;
     line-height: 73px;
   }
-  .pur {
+  header .pur {
     width: 180px;
     height: 50px;
     padding: 14px 25px;
@@ -1736,38 +1742,38 @@ span {
   }
 }
 @media (min-width: 1200px) {
-  #hright {
+  header #hright {
     display: flex;
     flex-flow: row;
   }
-  #hright > div {
+  header #hright > div {
     float: left;
     width: 290px;
   }
-  #hright > div > div {
+  header #hright > div > div {
     width: 250px;
     height: 230px;
     margin: 40px 0 0 0;
   }
-  #rright {
+  header #hright #rright {
     margin: 376px 20px 0;
     display: block;
   }
-  #rleft {
+  header #hright #rleft {
     margin: 103px 20px 0;
     display: block;
   }
 }
 @media (min-width: 1200px) and (max-height: 920px) {
-  #rleft {
+  header #rleft {
     margin: 33px 20px 0;
     display: block;
   }
-  #rright {
+  header #rright {
     margin: 36px 20px 0;
     display: block;
   }
-  #hide {
+  header #hide {
     display: none;
   }
 }
@@ -1776,7 +1782,7 @@ span {
   main {
     width: 100%;
   }
-  #mytop {
+  main #mytop {
     width: 100%;
     margin: auto;
     height: fit-content;
@@ -1788,17 +1794,17 @@ span {
     justify-content: space-between;
     gap: 10px;
   }
-  #mytop > div {
+  main #mytop > div {
     width: 24%;
     height: 350px;
   }
-  #mytop > div > h5 {
+  main #mytop > div > h5 {
     font-size: 18px;
     font-weight: 400;
     margin: 10px auto;
     text-align: center;
   }
-  #mytop > div > p {
+  main #mytop > div > p {
     width: 100%;
     margin-top: 16px;
     line-height: 30px;
@@ -1806,7 +1812,7 @@ span {
     font-size: medium;
     color: rgb(82, 82, 82);
   }
-  #mytop > div > div {
+  main #mytop > div > div {
     width: 75%;
     margin: auto;
     height: 120px;
@@ -1815,22 +1821,24 @@ span {
     overflow: hidden;
     transition: 1s;
   }
-  #mytop > div > div:hover {
+  main #mytop > div > div:hover {
     box-shadow: 5px 5px 25px gray;
   }
-  /* explore */
-  #explore {
+  main {
+    /* explore */
+  }
+  main #explore {
     width: 100%;
     margin: auto;
     height: 70vh;
     background-color: rgb(29, 29, 29);
   }
-  #number {
+  main #explore #number {
     width: 100%;
     height: 140px;
     margin-bottom: 30px;
   }
-  #number > span {
+  main #explore #number > span {
     width: 50%;
     height: 100%;
     font-size: 130px;
@@ -1839,10 +1847,10 @@ span {
     font-weight: bold;
     color: white;
   }
-  #five {
+  main #explore #number #five {
     text-align: end;
   }
-  #explore > div:nth-child(2) {
+  main #explore > div:nth-child(2) {
     height: 100px;
     width: 65%;
     margin: 30px auto 50px;
@@ -1851,13 +1859,13 @@ span {
     font-size: 50px;
     text-align: center;
   }
-  #explore > div#ul {
+  main #explore > div#ul {
     height: 30%;
     width: 70%;
     color: white;
     margin: auto;
   }
-  #explore > div#ul > ul {
+  main #explore > div#ul > ul {
     width: 70%;
     text-align: center;
     margin: auto;
@@ -1867,30 +1875,32 @@ span {
     justify-content: center;
     gap: 14px 37px;
   }
-  #explore > div#ul > ul > li {
+  main #explore > div#ul > ul > li {
     width: fit-content;
     font-size: 20px;
     color: white;
   }
-  #explore > div#ul > ul > li > span {
+  main #explore > div#ul > ul > li > span {
     display: block;
   }
-  #explore > div#mypic {
+  main #explore > div#mypic {
     width: 100%;
     margin-top: 20px;
     height: 50px;
   }
-  /* ul li */
-  #filter {
+  main {
+    /*FILER*/
+  }
+  main #filter {
     width: 100%;
     margin-top: 60px;
   }
-  #filter > div#ul2 {
+  main #filter > div#ul2 {
     width: 100%;
     height: 50px;
     color: white;
   }
-  #filter > div#ul2 > ul {
+  main #filter > div#ul2 > ul {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -1899,28 +1909,30 @@ span {
     justify-content: center;
     gap: 0 30px;
   }
-  #filter > div#ul2 > ul > li {
+  main #filter > div#ul2 > ul > li {
     width: fit-content;
     height: 100%;
     padding: 0 20px;
     align-items: center;
     line-height: 50px;
   }
-  #filter > div#ul2 > ul > li:hover {
+  main #filter > div#ul2 > ul > li:hover {
     background-color: rgb(58, 58, 58);
     cursor: pointer;
   }
-  .activ {
+  main #filter > div#ul2 > ul .activ {
     background-color: rgb(58, 58, 58);
   }
-  /* pic tall */
-  #pic-tall {
+  main #filter {
+    /* pic tall */
+  }
+  main #filter #pic-tall {
     width: 100%;
     margin: auto;
     padding: 40px;
     color: white;
   }
-  #pic-tall > div {
+  main #filter #pic-tall > div {
     width: 21%;
     margin: 40px 10px 70px;
     overflow: hidden;
@@ -1929,7 +1941,7 @@ span {
     position: relative;
     cursor: pointer;
   }
-  #pic-tall > div > div:nth-child(1) {
+  main #filter #pic-tall > div > div:nth-child(1) {
     width: 100%;
     height: 90%;
     overflow: hidden;
@@ -1937,7 +1949,7 @@ span {
     float: left;
     position: relative;
   }
-  #pic-tall > div > div:nth-child(1) > img {
+  main #filter #pic-tall > div > div:nth-child(1) > div {
     width: 100%;
     height: 220%;
     border-radius: 15px;
@@ -1946,15 +1958,11 @@ span {
     left: 0;
     transition: 5s;
   }
-  #pic-tall > div > div#tall-top img {
-    left: 0;
-    top: -80%;
-  }
-  #pic-tall > div > div:nth-child(1):hover > img {
+  main #filter #pic-tall > div > div:nth-child(1):hover > div {
     top: -120%;
     left: 0;
   }
-  #pic-tall > div > div:nth-child(2) {
+  main #filter #pic-tall > div > div:nth-child(2) {
     width: fit-content;
     height: 50px;
     position: absolute;
@@ -1966,11 +1974,12 @@ span {
     color: black;
     display: none;
   }
-  #pic-tall > div > div.sing {
+  main #filter #pic-tall > div > div:nth-child(2) {
+    z-index: 99;
     bottom: 120px;
     left: 40px;
   }
-  #pic-tall > div > div > a {
+  main #filter #pic-tall > div > div:nth-child(2) > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -1979,21 +1988,16 @@ span {
     line-height: 25px;
     color: #000;
   }
-  #pic-tall > div > div > a.single {
+  main #filter #pic-tall > div > div:nth-child(2) > a.single {
     width: 50%;
+    z-index: 100;
     float: left;
   }
-  #pic-tall > div > div > a:hover {
+  main #filter #pic-tall > div > div:nth-child(2) > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
-  #pic-tall > div:hover > div {
-    display: block;
-  }
-  #pic-tall > div:hover > div:nth-child(1) {
-    filter: brightness(50%);
-  }
-  #pic-tall > div > div > h5 {
+  main #filter #pic-tall > div > div > div > h5 {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -2001,10 +2005,7 @@ span {
     cursor: pointer;
     color: gray;
   }
-  #pic-tall > div:hover > div > h5 {
-    color: white;
-  }
-  #pic-tall > div > div > div.tall-top {
+  main #filter #pic-tall > div > div > div.tall-top {
     width: 100%;
     height: 100px;
     position: absolute;
@@ -2014,68 +2015,59 @@ span {
     color: gray;
     display: block;
   }
-  #pic-tall > div > div > div.tall-top h5 {
+  main #filter #pic-tall > div > div > div.tall-top h5 {
     width: 100%;
     height: 100%;
     line-height: 100px;
     text-align: center;
     display: block;
   }
-  /* all-r-l */
-  .auto {
+  main #filter #pic-tall > div:hover > div:nth-child(2) {
+    display: block;
+    z-index: 102;
+  }
+  main #filter #pic-tall > div:hover > div > h5 {
+    color: white;
+  }
+  main #filter #pic-tall > div:hover > div:nth-child(1) {
+    filter: brightness(50%);
+  }
+  main #filter #pic-tall > div > div#tall-top img {
+    left: 0;
+    top: -80%;
+  }
+  main {
+    /* all-r-l */
+  }
+  main .auto {
     width: 100%;
     background-color: rgb(238, 238, 238);
   }
-  #all-r-l {
+  main .auto #all-r-l {
     width: 93%;
     margin: auto;
     height: 1750px;
   }
-  #all-r-l > div {
+  main .auto #all-r-l > div {
     width: 46%;
     height: 83%;
     float: left;
     background-color: white;
     margin: 120px 2%;
   }
-  #all-r-l > div > div {
+  main .auto #all-r-l > div > div {
     width: 100%;
     height: 110px;
     margin: 50px 15px;
     padding: 7px;
   }
-  #all-r-l > div > div.top {
-    width: 100%;
-    text-align: start;
-    height: fit-content;
-    margin: 20px 0 0;
-    padding: 0;
-  }
-  #all-r-l > div > div.top > h5 {
-    font-size: 35px;
-    width: 100%;
-    padding: 0 20px;
-    font-weight: 700;
-  }
-  #all-r-l > div > div.top > p {
-    width: 100%;
-    padding: 10px 20px;
-  }
-  #all-r-l > div > div > h5 {
+  main .auto #all-r-l > div > div > h5 {
     width: 67%;
     margin: auto;
     font-size: 20px;
     font-weight: 450;
   }
-  #rtl > p {
-    font-size: 16px;
-    height: 140px;
-    color: gray;
-    margin: 0 10px 0 0;
-    line-height: 70px;
-    padding: 0 10px;
-  }
-  #all-r-l > div > div > p {
+  main .auto #all-r-l > div > div > p {
     font-size: 16px;
     width: 70%;
     margin: auto;
@@ -2083,23 +2075,50 @@ span {
     line-height: 30px;
     padding: 10px;
   }
-  #all-r-l > div > div > div {
+  main .auto #all-r-l > div.top {
+    width: 100%;
+    text-align: start;
+    height: fit-content;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  main .auto #all-r-l > div.top > h5 {
+    font-size: 35px;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  main .auto #all-r-l > div.top > p {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  main .auto #all-r-l #rtl > p {
+    font-size: 16px;
+    height: 140px;
+    color: gray;
+    margin: 0 10px 0 0;
+    line-height: 70px;
+    padding: 0 10px;
+  }
+  main .auto #all-r-l > div > div > div {
     width: 80px;
     height: 100%;
     float: left;
     transition: 0.2s;
   }
-  #all-r-l > div > div:hover > div {
+  main .auto #all-r-l > div > div:hover > div {
     transform: scaleX(-1);
   }
-  /* big-pic */
-  #big-pic {
+  main {
+    /* big-pic */
+  }
+  main #big-pic {
     width: 100%;
     padding: 0 20px;
     margin: auto;
     background-color: white;
   }
-  #big-pic > div {
+  main #big-pic > div {
     height: 100vh;
     width: 100%;
     padding: 50px 20px;
@@ -2108,26 +2127,26 @@ span {
     align-items: center;
     position: relative;
   }
-  #big-pic > div > div {
+  main #big-pic > div > div {
     width: 50%;
     height: 60vh;
     float: left;
     padding: 50px;
   }
-  #big-pic h6 {
+  main #big-pic h6 {
     width: 100%;
     font-weight: 400;
     margin-top: 120px;
     font-size: 20px;
     padding: 10px 0;
   }
-  #big-pic h2 {
+  main #big-pic h2 {
     width: 100%;
     font-size: 48px;
     font-weight: 450;
     margin: 0px 0 10px 0;
   }
-  #big-pic p {
+  main #big-pic p {
     width: 100%;
     line-height: 25px;
     color: gray;
@@ -2135,11 +2154,11 @@ span {
     font-size: 20px;
     text-align: justify;
   }
-  #big-pic .bak-color {
+  main #big-pic .bak-color {
     background-color: rgba(228, 228, 228, 0.267);
     width: 100%;
   }
-  #big-pic .pic-big {
+  main #big-pic .pic-big {
     width: 49%;
   }
   /* footer */
