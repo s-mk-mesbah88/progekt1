@@ -1021,7 +1021,7 @@ body {
         align-items: flex-start;
         justify-content: space-between;
         gap: 50px 10px;
-        
+
         > div {
           width: 48%;
           height: 90vh;
@@ -1121,6 +1121,7 @@ body {
         > div > div#tall-top div {
           width: 100%;
           height: 100%;
+          top: 0 !important;
         }
       }
     }
@@ -1591,10 +1592,6 @@ body {
             top: -120%;
             left: 0;
           }
-          > div#tall-top div {
-            left: 0;
-            top: -80%;
-          }
           > div:nth-child(2) {
             width: fit-content;
             height: 50px;
@@ -1661,9 +1658,10 @@ body {
             display: block;
           }
         }
-        #tall-pic > div:nth-child(1) > div {
+        >div > div#tall-top  div {
           width: 100%;
           height: 100%;
+          top: 0 !important;
         }
       }
     }
@@ -2201,9 +2199,11 @@ body {
         > div:hover > div:nth-child(1) {
           filter: brightness(50%);
         }
-        > div > div#tall-top div {
+        div#tall-top > div {
           width: 100%;
           height: 100%;
+          top: 0;
+          left: 0;
         }
       }
     }
@@ -2382,4 +2382,10 @@ body {
   .hide {
     display: none !important;
   }
+}
+
+div#tall-top div {
+  width: 100%;
+  height: 100%;
+  top: 0 !important;
 }
