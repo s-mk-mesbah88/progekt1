@@ -1100,7 +1100,6 @@ body {
             border: none;
             color: gray;
             display: block;
-
             h5 {
               width: 100%;
               height: 100%;
@@ -1662,6 +1661,10 @@ body {
             display: block;
           }
         }
+        #tall-pic > div:nth-child(1) > div {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
 
@@ -2198,9 +2201,9 @@ body {
         > div:hover > div:nth-child(1) {
           filter: brightness(50%);
         }
-        > div > div#tall-top img {
-          left: 0;
-          top: -80%;
+        > div > div#tall-top div {
+          width: 100%;
+          height: 100%;
         }
       }
     }
