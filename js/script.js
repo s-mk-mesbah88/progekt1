@@ -231,17 +231,7 @@ $(document).ready(function () {
     $(this).parent().removeClass("main3");
   });
 
-  function mymain3() {
-    let w = $(window).width();
-    if (w <= "650") {
-      $(".main2").fadeOut();
-    } else {
-      $(".main2").fadeIn();
-    }
-  }
-  mymain3();
-
-  function mytop() {
+  $(window).resize(function() {
     let h = $(window).height();
     console.log(h);
     if (h < "600") {
@@ -255,9 +245,14 @@ $(document).ready(function () {
       h = h + 50;
       document.getElementById("main1").style.top = h + "px";
     }
-  }
-
-  mytop();
+    let w = $(window).width();
+    if (w <= "650") {
+      $(".main2").fadeOut();
+    } else {
+      $(".main2").fadeIn();
+    }
+  })
+  
 
   $(window).scroll(function () {
     if ($(this).scrollTop() < 400) {
