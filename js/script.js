@@ -235,7 +235,7 @@ $(document).ready(function () {
     let h = $(window).height();
     console.log(h);
     if (h < "600") {
-      h = h / 2 - 120;
+      h = h / 2 - 80;
       document.getElementById("main2").style.top = h + "px";
     } else {
         h = h / 3 - 50;
@@ -245,8 +245,10 @@ $(document).ready(function () {
       h = h + 50;
       document.getElementById("main1").style.top = h + "px";
     }
+
+    // width
     let w = $(window).width();
-    if (w <= "650") {
+    if (w <= "700") {
       $(".main2").fadeOut();
     } else {
       $(".main2").fadeIn();
