@@ -182,7 +182,7 @@ body {
 }
 
 /* رسپانسیو گوشی  */
-@media (max-width: 599px) {
+@media (max-width: 550px) {
   header {
     width: 100%;
     height: 100vh;
@@ -243,12 +243,12 @@ body {
     display: none;
   }
 }
-@media (max-width: 599px) and (max-height: 920px) {
+@media (max-width: 550px) and (max-height: 920px) {
   header #hide {
     display: none;
   }
 }
-@media (max-width: 599px) and (max-height: 640px) {
+@media (max-width: 550px) and (max-height: 640px) {
   header #hright {
     display: none;
   }
@@ -256,7 +256,7 @@ body {
     height: 100%;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 550px) {
   /* main */
   main {
     width: 100%;
@@ -438,14 +438,11 @@ body {
     border-radius: 15px;
   }
   main #filter #pic-tall > div > div:nth-child(1) > div:nth-child(2) {
-    width: fit-content;
+    width: 100%;
     height: 50px;
     position: absolute;
     bottom: 120px;
-    left: 70px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: white;
+    left: 0px;
     color: black;
     display: none;
   }
@@ -704,7 +701,7 @@ body {
   }
 }
 /* رسپانسیو تپلت  */
-@media (min-width: 500px) {
+@media (min-width: 551px) {
   header {
     width: 100%;
     height: 100vh;
@@ -769,12 +766,12 @@ body {
     display: none;
   }
 }
-@media (min-width: 500px) and (max-height: 920px) {
+@media (min-width: 551px) and (max-height: 920px) {
   header #hide {
     display: none;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 551px) {
   /* main */
   main {
     width: 100%;
@@ -962,22 +959,25 @@ body {
     left: 0;
   }
   main #filter #pic-tall > div > div:nth-child(2) {
-    width: fit-content;
+    width: 100%;
     height: 50px;
     position: absolute;
     bottom: 120px;
-    left: 70px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: white;
+    left: 0px;
     color: black;
     display: none;
   }
-  main #filter #pic-tall > div > div:nth-child(2) {
-    bottom: 120px;
-    left: 40px;
+  main #filter #pic-tall > div > div:nth-child(2) > div {
+    width: fit-content;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
   }
-  main #filter #pic-tall > div > div > a {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -986,11 +986,11 @@ body {
     line-height: 25px;
     color: #000;
   }
-  main #filter #pic-tall > div > div > a.single {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a.single {
     width: 50%;
     float: left;
   }
-  main #filter #pic-tall > div > div > a:hover {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
@@ -1157,14 +1157,14 @@ body {
   /* footer */
   footer {
     width: 100%;
-    height: 250px;
+    height: 350px;
     position: static;
     bottom: 0;
     left: 0;
   }
   footer > div {
     width: fit-content;
-    height: 30px;
+    height: 40px;
     margin: auto;
   }
   footer h6 {
@@ -1189,7 +1189,7 @@ body {
     padding: 14px 25px;
     border-radius: 60px;
     background-color: #1f150c;
-    margin: 25px auto;
+    margin: 125px auto;
   }
   footer .pur > a {
     width: 100%;
@@ -1206,13 +1206,7 @@ body {
     color: white;
     margin: 3px 0 0 5px;
   }
-  footer .pur div:nth-child(3) {
-    width: fit-content;
-    margin: 100px auto 0;
-    display: block;
-    height: 50px;
-  }
-  footer #gotop {
+  #gotop {
     width: 50px;
     height: 50px;
     position: fixed;
@@ -1221,7 +1215,7 @@ body {
     display: none;
     z-index: 98;
   }
-  footer .hide {
+  .hide {
     display: none !important;
   }
 }
@@ -1452,7 +1446,7 @@ body {
     gap: 60px 10px 60px;
   }
   main #filter #pic-tall > div {
-    width: 20%;
+    width: 35%;
     overflow: hidden;
     height: 96vh;
     position: relative;
@@ -1487,20 +1481,26 @@ body {
     left: 0;
   }
   main #filter #pic-tall > div > div:nth-child(2) {
-    width: fit-content;
+    width: 100%;
     height: 50px;
     position: absolute;
     bottom: 120px;
-    left: 70px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: white;
+    left: 0px;
     color: black;
     display: none;
     bottom: 120px;
-    left: 10px;
   }
-  main #filter #pic-tall > div > div > a {
+  main #filter #pic-tall > div > div:nth-child(2) > div {
+    width: fit-content;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+  }
+  main #filter #pic-tall > div > div:nth-child(2) > div > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -1509,11 +1509,11 @@ body {
     font-size: 16px;
     color: #000;
   }
-  main #filter #pic-tall > div > div > a.single {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a.single {
     width: 50%;
     float: left;
   }
-  main #filter #pic-tall > div > div > a:hover {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
@@ -1685,7 +1685,7 @@ body {
   /* footer */
   footer {
     width: 100%;
-    height: 300px;
+    height: 350px;
     position: static;
     bottom: 0;
     left: 0;
@@ -1702,7 +1702,7 @@ body {
   }
   footer h2 {
     text-align: center;
-    height: fit-content;
+    height: 100px;
     width: 70%;
     height: 100px;
     color: white;
@@ -1717,7 +1717,7 @@ body {
     padding: 14px 25px;
     border-radius: 60px;
     background-color: #1f150c;
-    margin: 25px auto;
+    margin: 165px auto;
   }
   footer .pur > a {
     width: 100%;
@@ -1734,13 +1734,10 @@ body {
     color: white;
     margin: 3px 0 0 5px;
   }
-  footer .pur div:nth-child(3) {
-    width: fit-content;
-    margin: 150px auto 0;
-    display: block;
-    height: 50px;
+  .hide {
+    display: none !important;
   }
-  footer #gotop {
+  #gotop {
     width: 50px;
     height: 50px;
     position: fixed;
@@ -1748,9 +1745,6 @@ body {
     right: 5px;
     display: none;
     z-index: 98;
-  }
-  footer .hide {
-    display: none !important;
   }
 }
 /* رسپانسیو پی سی */
@@ -2050,23 +2044,26 @@ body {
     left: 0;
   }
   main #filter #pic-tall > div > div:nth-child(2) {
-    width: fit-content;
+    width: 100%;
     height: 50px;
     position: absolute;
     bottom: 120px;
-    left: 50px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: white;
+    left: 0px;
+    border: none;
     color: black;
     display: none;
   }
-  main #filter #pic-tall > div > div:nth-child(2) {
-    z-index: 99;
-    bottom: 120px;
-    left: 40px;
+  main #filter #pic-tall > div > div:nth-child(2) > div {
+    width: fit-content;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
   }
-  main #filter #pic-tall > div > div:nth-child(2) > a {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -2075,12 +2072,12 @@ body {
     line-height: 25px;
     color: #000;
   }
-  main #filter #pic-tall > div > div:nth-child(2) > a.single {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a.single {
     width: 50%;
     z-index: 100;
     float: left;
   }
-  main #filter #pic-tall > div > div:nth-child(2) > a:hover {
+  main #filter #pic-tall > div > div:nth-child(2) > div > a:hover {
     background-color: rgb(24, 9, 39);
     color: white;
   }
@@ -2110,7 +2107,7 @@ body {
     display: block;
   }
   main #filter #pic-tall > div:hover > div:nth-child(2) {
-    display: block;
+    display: flex;
     z-index: 102;
   }
   main #filter #pic-tall > div:hover > div > h5 {
